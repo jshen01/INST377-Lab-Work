@@ -3,6 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.header a {
+    color:blue;
+    text-decoration: none;
+}
+
 .name {
   background-color: gray;
   padding: 10px 0;
@@ -23,6 +34,7 @@
   width: 900px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .links {
@@ -50,9 +62,14 @@
   align-items: center;
 }
 
+.logo {
+    width: auto;
+    height: auto;
+}
 .photo-grid-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .photo-grid {
