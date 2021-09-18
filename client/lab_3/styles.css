@@ -5,13 +5,13 @@
 }
 
 .menu a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .header a {
-    color:blue;
-    text-decoration: none;
+  color: blue;
+  text-decoration: none;
 }
 
 .name {
@@ -62,10 +62,6 @@
   align-items: center;
 }
 
-.logo {
-    width: auto;
-    height: auto;
-}
 .photo-grid-container {
   display: flex;
   justify-content: center;
@@ -76,9 +72,9 @@
   width: 900px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   flex-direction: row-reverse;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .photo-grid-item {
