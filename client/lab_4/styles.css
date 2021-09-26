@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.header a {
+  color: blue;
+  text-decoration: none;
+}
+
+.name {
+  background-color: gray;
+  padding: 10px 0;
+  display: flex;
+  justify-content: left;
+}
+
+.menu-container {
+  color: #fff;
+  background-color: #5995da; /* Blue */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  border: 1px solid #fff;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.links {
+  border: 1px solid #fff; /* For debugging */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main {
+  margin-left: 20px;
+}
+
+.header-container {
+  color: #5995da;
+  background-color: #d6e9fe;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-grid-container > div {
+  margin: 2px;
+}
+
+.carousel {
+  overflow: hidden;
+  max-width: 600px;
+  position: relative;
+}
+
+.carousel .carousel_item,
+.carousel .carousel_item--hidden {
+  display: none;
+}
+
+.carousel .carousel_item img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.carousel .carousel_item--visible {
+  display: block;
+}
+
+.carousel_actions_prev {
+  display: flex;
+  width: 100%;
+}
+
+.carousel_actions_next {
+  display: flex;
+  width: 100%;
+}
+
+.carousel_actions_prev,
+.carousel_actions_next,
+button {
+  border-radius: 7px;
+  border: 0px;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel_actions_prev,
+.carousel_actions_next,
+button:focus {
+  border: 3px solid;
+  border-color: grey;
+  background-color: coral;
+}
+
+.first-item {
+  order: 1;
+}
+
+.last-item {
+  order: -1;
+}
+
+.project {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.github {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border: 1px solid #fff;
+  background-color: #d6e9fe;
+  height: 200px;
+  flex: 1;
+}
+
+.footer-one,
+.footer-three {
+  background-color: #5995da;
+  flex: initial;
+  width: 300px;
+}
+
+.demo {
+  margin-left: auto;
+}
