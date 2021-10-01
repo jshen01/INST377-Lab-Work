@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Jinfeng Shen's Lab 5</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css'>
+    <link rel='stylesheet' href='styles.css' />
+</head>
+
+<body>
+    <div class='wrapper'>
+        <div class='container'>
+            <div class='columns'>
+                <div class='column is-full'>
+                    <div class='box title has-background-link'>Jinfeng Shen's Lab 5</div>
+                </div>
+            </div>
+
+            <div class='columns is-multiline is-centered is-vcentered'>
+                <div class='column is-one-fifth'>
+                    <form action='/api' method='get' class='box has-background-warning'>
+                        <div class='field'>
+                            <label class='label'>First Name</label>
+                            <div class='control'>
+                                <input class='input' type='text'>
+                            </div>
+                        </div>
+
+                        <div class='field'>
+                            <label class='label'>Food Preference</label>
+                            <div class='control'>
+                                <input class='input' type='text'>
+                            </div>
+                        </div>
+
+                        <div class='field'>
+                            <div class='control'>
+                                <label class='label'>Veggie or Vegan?</label>
+                                <label class='radio'>
+                                    <input type='radio' name='choices'>
+                                    Yes
+                                </label>
+                                <label class='radio'>
+                                    <input type='radio' name='choices'>
+                                    No
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class='button is-info'>Submit</button>
+
+                    </form>
+                </div>
+
+                <div class='column is-half'>
+                    <div class='box has-background-success'>
+                        This is going to be something in two weeks.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
