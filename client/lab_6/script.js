@@ -1,5 +1,5 @@
 async function windowActions(evt) {
-    const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json'; /* '/api/wholeMeal' */
+    const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
     const request = await fetch(endpoint);
     const locations = await request.json();
 
@@ -32,7 +32,17 @@ async function windowActions(evt) {
     const searchInput = document.querySelector('.search');
     const suggestions = document.querySelector('.suggestions');
     searchInput.addEventListener('change', displayMatches);
-    searchInput.addEventListener('keyup', (evt) => { displayMatches(evt) });
+
+    // Changes for resubmission
+    // Need to reset result after clearing input
+    // Suggestion list should be reset if input is cleared
+    searchInput.addEventListener('keyup', (evt) => {
+        if (searchInput.value === '') {
+            suggestions.innerHTML = '';
+        } else {
+            displayMatches(evt)
+        }
+    });
 }
 
 window.onload = windowActions;

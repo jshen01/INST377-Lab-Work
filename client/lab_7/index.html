@@ -2,20 +2,44 @@
 <html lang='en'>
 
 <head>
-    <meta charset='UTF-8' />
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Jinfeng Shen - Lab 6: Typeahead Entries</title>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Jinfeng Shen - Lab 7: JSON to Map Markers</title>
     <link rel='stylesheet' href='styles.css' />
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css'>
+    <link rel='stylesheet' href='https://unpkg.com/leaflet@1.7.1/dist/leaflet.css'
+        integrity='sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=='
+        crossorigin='' />
+    <script src='https://unpkg.com/leaflet@1.7.1/dist/leaflet.js'
+        integrity='sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=='
+        crossorigin=''></script>
     <script src='script.js' charset='utf-8'></script>
 </head>
 
 <body>
-    <h1>Jinfeng Shen - Lab 6: Typeahead Entries</h1>
 
-    <form class='searchForm'>
-        <input type='text' class='search'>
-        <ul class='suggestions'></ul>
-    </form>
+    <div class='container'>
+        <div class=titles>
+            <h1 class='title'>Jinfeng Shen's Lab 7</h1>
+            <h2 class='subtitle'>Zip Code Food Search</h2>
+        </div>
+
+        <div class='columns'>
+            <div class='column is-half'>
+                <p><strong>Search</strong></p>
+                <input name='searchTerm' class='search' type='text'>
+                <!-- <button class='Submit'>Submit</button> -->
+                <ul class='suggestions'></ul>
+            </div>
+
+            <div class='column'>
+                <div id='mapid'></div>
+            </div>
+        </div>
+    
+        
+    </div>
+
 </body>
 
 </html>
