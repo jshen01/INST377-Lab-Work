@@ -26,18 +26,21 @@
 
         <div class='columns'>
             <div class='column is-half'>
-                <p><strong>Search</strong></p>
-                <input name='searchTerm' class='search' type='text'>
-                <!-- <button class='Submit'>Submit</button> -->
-                <ul class='suggestions'></ul>
+                <form action='/api' method='get'>
+                    <div class='field'>
+                        <label class='label'>Search</label>
+                        <div class='control'>
+                            <input name='searchTerm' class='search' type='text'>
+                            <ul class='suggestions'></ul>
+                        </div>
+                    </div>
+                </form>
             </div>
 
             <div class='column'>
                 <div id='mapid'></div>
             </div>
         </div>
-    
-        
     </div>
 
 </body>

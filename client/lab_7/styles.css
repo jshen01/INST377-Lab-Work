@@ -1,8 +1,14 @@
-#mapid {
-  height: 400px; 
+.titles {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
-.column {
+.search {
   width: auto;
-  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#mapid {
+  height: 400px; 
 }
